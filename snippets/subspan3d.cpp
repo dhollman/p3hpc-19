@@ -1,0 +1,9 @@
+for(ptrdiff_t i = 0; i < s.extent(0); ++i) {
+  auto sub_i = subspan(s, i, all, all);
+  for (ptrdiff_t j = 0; j < s.extent(1); ++j) {
+    auto sub_i_j = subspan(sub_i, j, all);
+    for (ptrdiff_t k = 0; k < s.extent(2); ++k) {
+      sum += sub_i_j(k);
+    }
+  }
+}
