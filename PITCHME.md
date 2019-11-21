@@ -65,6 +65,7 @@
   * Design approved for C++23
   * Currently under wording review
 * Support for arbitrary (rectangular) shapes, mixing of static and runtime extents, layout customization, and memory access customization
+* Based on a similar data structure in Kokkos, a performance-portability collaboration across many of the Department of Energy labs.
 @ulend
 
 
