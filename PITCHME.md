@@ -10,7 +10,7 @@
 ### Follow along! <!-- {{{2 -->
 @snapend
 
-## [dsh.fyi/TODO](https://dsh.fyi/p3hpc-19)
+## [dsh.fyi/p3hpc-19](https://dsh.fyi/p3hpc-19)
 
 <div class="space-3"></div>
 
