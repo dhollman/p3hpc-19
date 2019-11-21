@@ -5,7 +5,7 @@
 .snl-slide {
     --presentation-title: "mdspan in C++: A Case Study in the Integration of Performance Portable Features into International Language Standards";
     --presentation-authors: "D. S. Hollman, Bryce Adelstein Lelbach, H. Carter Edwards, Mark Hoemmen, Daniel Sunderland, and Christian R. Trott";
-    --sand-number: "2019-XXXX C";
+    --sand-number: "2019-14348 PE";
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 .title-slide {
-    --title-font-size: 5.3vh;
+    --title-font-size: 5.5vh;
     --authors-font-size: 3.5vh;
     --sand-note-font-size: 1vh;
     --title-ribbon-position: 35vw;
@@ -79,6 +79,7 @@ div.title-slide.slide-background::after {
 .span-67 { width: 67% !important; }
 .span-68 { width: 68% !important; }
 .span-69 { width: 69% !important; }
+.span-105 { width: 105% !important; }
 .height-90 { height: 90% !important; }
 .height-85 { height: 85% !important; }
 .height-80 { height: 80% !important; }
@@ -123,6 +124,12 @@ section.content-font-70>*:not(.slide-title)
 .reveal .snl-slide img {
     border: 0;
     box-shadow: none;
+}
+
+.reveal .snl-slide pre {
+    box-shadow: none;
+    border: 1px solid #888 !important; 
+    transform: scale(1.15);
 }
 
 @media screen and (max-aspect-ratio: 40/25) {

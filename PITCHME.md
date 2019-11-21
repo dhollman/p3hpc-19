@@ -10,7 +10,7 @@
 ### Follow along! <!-- {{{2 -->
 @snapend
 
-## [dsh.fyi/TODO](https://dsh.fyi/TODO)
+## [dsh.fyi/TODO](https://dsh.fyi/p3hpc-19)
 
 <div class="space-3"></div>
 
@@ -91,20 +91,24 @@
 
 ```c++
 void some_function(double* data, float* data2) {
+
   // std::dynamic_extent means it's a dimension given at runtime
   auto my_matrix = mdspan<double, dynamic_extent, dynamic_extent>(data, 20, 40);
+
   // runtime and compile-time dimensions can be mixed
   auto other_matrix = mdspan<float, 20, dynamic_extent>(data2, 40);
+
   /* ... */
+
   my_matrix(17, 34) = 3.14;
   other_matrix(0, 12) = my_matrix(17, 34);
 }
 ```
 
-@[2-3](View `data` as a 20x40 matrix of doubles (runtime extents&rpar;)
-@[4-5](Mixed compile-time and runtime dimensions)
-@[7-8](Access to values uses the parenthesis operator)
-@[1-9]()
+@[3-4](View `data` as a 20x40 matrix of doubles (runtime extents&rpar;)
+@[6-7](Mixed compile-time and runtime dimensions)
+@[11-12](Access to values uses the parenthesis operator)
+@[1-13]()
 
 <!-- }}}2............................................................................ -->
 
@@ -296,7 +300,9 @@ assert(s2(1, 3) == s(1, 2, 3));
 * The `LayoutPolicy` and `Accessor` customization points allow adaptation to a diverse set of use cases
 * Benchmarks demonstrate that the abstraction comes with zero overhead in most scenarios and with most compilers
 * Implementation is available at [github.com/kokkos/mdspan](https://github.com/kokkos/mdspan).
-  * Feedback appreciated!
+  * Our implementation is backported all the way to C++11 (though it will use C++14 or C++17 to improve compilation times if available)
+  * We plan to submit this implementation as pull requests to the three major standard library implementations upon final acceptance of `mdspan` into C++23
+  * Feedback is appreciated!
 @ulend
 
 <!-- }}}2............................................................................ -->
@@ -308,76 +314,3 @@ assert(s2(1, 3) == s(1, 2, 3));
 
 
 <!-- }}}1............................................................................ -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
