@@ -31,8 +31,9 @@
 ---
 <!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
 
+<!--
 @snap[north span-100 slide-title]
-### Outline <!-- {{{2 -->
+### Outline
 @snapend
 
 @ul
@@ -48,8 +49,7 @@
   * Subspan Abstraction Overhead
 * Concluding Remarks
 @ulend
-
-<!-- }}}2............................................................................ -->
+-->
 
 ---
 <!-- .slide: class="content-slide snl-slide" style="font-size: 100%" --> 
